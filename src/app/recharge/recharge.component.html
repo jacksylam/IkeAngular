@@ -1,40 +1,57 @@
 <div class="row">
+  <div class="col">
   <table class="table table-striped">
     <tbody>
       <tr>
         <td>Xi - Interim moisture storage:</td>
         <td>
-          <input type="form-control" ng-bind="Xi">
+          <input type="form-control" [(ngModel)]="Xi">
         </td>
       </tr>
 
       <tr>
         <td> Ei - Total depth of water removed by ET from the plant-root zone during day</td>
         <td>
-          <input type="form-control" ng-bind="Ei">
+          <input type="form-control" [(ngModel)]="Ei">
         </td>
       </tr>
       <tr>
         <td> Mm - Moisture-storage capcity of plant root zone</td>
         <td>
-          <input type="form-control" ng-bind="Mm">
+          <input type="form-control" [(ngModel)]="Mm">
         </td>
       </tr>
       <tr>
         <td> DR - Daily rate of direct recharge</td>
         <td>
-          <input type="form-control" ng-bind="DR">
+          <input type="form-control" [(ngModel)]="DR">
         </td>
       </tr>
 
       <tr>
         <td> Qi - Ground water recharge during day</td>
-            {{Xi}}
+        <!--{{calculateQi()}}-->
+        {{DayValues[0].Qi}}
       </tr>
       <tr>
         <td> Mi - Moisture storage at the end of the current day</td>
-           {{Ei}}
+        <!--{{calculateMi()}}-->
+         {{DayValues[0].Mi}}
       </tr>
-
+      
   </table>
 </div>
+   
+</div>
+<div class="row">
+        <div class="col-sm">
+        <p>If Xi - Ei <= Mm, then Qi = DR and Mi = Xi - Ei </p>
+        </div>
+        <div class="col-sm">
+        <p>If Xi - Ei > Mm, then Qi = (Xi - Ei - Mm) + DR and Mi = Mm </p>
+        </div>
+        
+    </div>
+
+<app-line-chart *ngIf="chartData" [data]="chartData"></app-line-chart>
+    
