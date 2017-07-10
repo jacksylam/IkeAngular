@@ -1,0 +1,40 @@
+<div class="row">
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td>Xi - Interim moisture storage:</td>
+        <td>
+          <input type="form-control" ng-bind="Xi">
+        </td>
+      </tr>
+
+      <tr>
+        <td> Ei - Total depth of water removed by ET from the plant-root zone during day</td>
+        <td>
+          <input type="form-control" ng-bind="Ei">
+        </td>
+      </tr>
+      <tr>
+        <td> Mm - Moisture-storage capcity of plant root zone</td>
+        <td>
+          <input type="form-control" ng-bind="Mm">
+        </td>
+      </tr>
+      <tr>
+        <td> DR - Daily rate of direct recharge</td>
+        <td>
+          <input type="form-control" ng-bind="DR">
+        </td>
+      </tr>
+
+      <tr>
+        <td> Qi - Ground water recharge during day</td>
+            {{Xi}}
+      </tr>
+      <tr>
+        <td> Mi - Moisture storage at the end of the current day</td>
+           {{Ei}}
+      </tr>
+
+  </table>
+</div>
