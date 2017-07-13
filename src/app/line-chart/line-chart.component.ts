@@ -45,20 +45,32 @@ export class LineChartComponent implements OnInit {
       .attr('height', element.offsetHeight);
 
     // chart plot area
-    this.chart = svg.append('g')
-      .attr('class', 'bars')
-      .attr('transform', `translate(${this.margin.left}, ${this.margin.top})`);
+    // this.chart = svg.append('g')
+    //   .attr('class', 'bars')
+    //   .attr('transform', `translate(${this.margin.left}, ${this.margin.top})`);
+
+
+
+
+       
 
     // define X & Y domains
     let xDomain = this.data.map(d => d[0]);
     let yDomain = [0, d3.max(this.data, d => d[1])];
 
     // create scales
-    this.xScale = d3.scaleBand().padding(0.1).domain(xDomain).rangeRound([0, this.width]);
+    this.xScale = d3.scaleLinear().domain(xDomain).range([0, this.width]);
     this.yScale = d3.scaleLinear().domain(yDomain).range([this.height, 0]);
 
+
+
+ var line = d3.line()
+    .x(function(d) {return this.xScale(d[0])})
+    .y(function(d) {return this.yScale(d[1])});
     // bar colors
-    this.colors = d3.scaleLinear().domain([0, this.data.length]).range(<any[]>['red', 'blue']);
+    // this.colors = d3.scaleLinear().domain([0, this.data.length]).range(<any[]>['red', 'blue']);
+
+  
 
     // x & y axis
     this.xAxis = svg.append('g')
@@ -69,47 +81,59 @@ export class LineChartComponent implements OnInit {
       .attr('class', 'axis axis-y')
       .attr('transform', `translate(${this.margin.left}, ${this.margin.top})`)
       .call(d3.axisLeft(this.yScale));
+
+      
+this.chart = svg
+       .append("path")
+       .datum(this.data)
+       .attr("class", "line")
+       .attr("d", line);
+
+  
+
   }
 
   updateChart() {
     // update scales & axis
-    this.xScale.domain(this.data.map(d => d[0]));
-    this.yScale.domain([0, d3.max(this.data, d => d[1])]);
-    this.colors.domain([0, this.data.length]);
-    this.xAxis.transition().call(d3.axisBottom(this.xScale));
-    this.yAxis.transition().call(d3.axisLeft(this.yScale));
+    // this.xScale.domain(this.data.map(d => d[0]));
+    // this.yScale.domain([0, d3.max(this.data, d => d[1])]);
+    // // this.colors.domain([0, this.data.length]);
+    // this.xAxis.transition().call(d3.axisBottom(this.xScale));
+    // this.yAxis.transition().call(d3.axisLeft(this.yScale));
 
-    var valueline = d3.line()
-    .x(function(d) {return d[0]})
-    .y(function(d) {return d[1]});
+    // var line = d3.line()
+    // .x(function(d) {return d[0]})
+    // .y(function(d) {return d[1]});
 
-    let update = this.chart.selectAll('.bar')
-      .data(this.data);
+
+    // let update = this.chart.selectAll('.bar')
+    //   .data(this.data);
 
     // remove exiting bars
-    update.exit().remove();
+    // update.exit().remove();
 
     // update existing bars
-    this.chart.selectAll('.bar').transition()
-      .attr('x', d => this.xScale(d[0]))
-      .attr('y', d => this.yScale(d[1]))
-      .attr('width', d => this.xScale.bandwidth())
-      .attr('height', d => this.height - this.yScale(d[1]))
-      .style('fill', (d, i) => this.colors(i));
+    // this.chart.selectAll('.bar').transition()
+    //   .attr('x', d => this.xScale(d[0]))
+    //   .attr('y', d => this.yScale(d[1]))
+    //   .attr('width', d => this.xScale.bandwidth())
+    //   .attr('height', d => this.height - this.yScale(d[1]))
+    //   .style('fill', (d, i) => this.colors(i));
 
-    // add new bars
-    update
-      .enter()
-      .append('rect')
-      .attr('class', 'bar')
-      .attr('x', d => this.xScale(d[0]))
-      .attr('y', d => this.yScale(0))
-      .attr('width', this.xScale.bandwidth())
-      .attr('height', 0)
-      .style('fill', (d, i) => this.colors(i))
-      .transition()
-      .delay((d, i) => i * 10)
-      .attr('y', d => this.yScale(d[1]))
-      .attr('height', d => this.height - this.yScale(d[1]));
+      
+    // // add new bars
+    // update
+    //   .enter()
+    //   .append('rect')
+    //   .attr('class', 'bar')
+    //   .attr('x', d => this.xScale(d[0]))
+    //   .attr('y', d => this.yScale(0))
+    //   .attr('width', this.xScale.bandwidth())
+    //   .attr('height', 0)
+    //   .style('fill', (d, i) => this.colors(i))
+    //   .transition()
+    //   .delay((d, i) => i * 10)
+    //   .attr('y', d => this.yScale(d[1]))
+    //   .attr('height', d => this.height - this.yScale(d[1]));
   }
 }

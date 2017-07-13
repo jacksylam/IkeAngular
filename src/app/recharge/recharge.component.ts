@@ -130,8 +130,31 @@ export class RechargeComponent implements OnInit, OnChanges {
     //     Math.floor(Math.random() * 100)
     //   ]);
     // }
-    for(let i = 0; i < this.DayValues.length; i++){
-      this.chartData.push([i, this.DayValues[i].Qi]);
-    }
+    // for(let i = 0; i < this.DayValues.length; i++){
+    //   this.chartData.push([i, this.DayValues[i].Qi]);
+    // }
+
+
+    //  for(let i = 0; i < this.DayValues.length; i++){
+    //   this.chartData.push([i, this.DayValues[i].Qi]);
+    // }
+
+    var thing = { name: "test",
+    series:[]
+  }
+  
+  for(let i = 0; i< this.DayValues.length; i++){
+    thing.series.push({name: i, value: this.DayValues[i].Qi+Math.random()*10});
+  }
+  
+    // thing.series.push({name: 2323, value: 1231});
+    // thing.series.push({name: 2324, value: 1300});
+
+    // thing.series.push({name: 2325, value: 1400});
+
+    // thing.series.push({name: 2326, value: 1100});
+
+    this.chartData.push(thing);
+   
   }
 }
