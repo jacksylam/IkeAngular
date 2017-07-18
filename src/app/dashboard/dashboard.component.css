@@ -1,6 +1,6 @@
 .table td {
    text-align: center;   
 }
-.well{
-    background: cornflowerblue;
+md-grid-tile {
+  background: white;
 }

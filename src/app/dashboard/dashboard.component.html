@@ -1,31 +1,43 @@
-<div class="row">
-  <div class="col">
+<md-card>
+<md-card-content>
     <table class="table table-striped">
+       <caption style="caption-side:bottom">
+         <p>If Xi - Ei
+      "<=M m, then Qi=D R and Mi=X i - Ei 
+          <br>
+        If Xi - Ei > Mm, then Qi = (Xi - Ei - Mm) + DR and Mi = Mm <p></caption>
       <tbody>
         <tr>
           <td>Xi - Interim moisture storage:</td>
           <td>
-            <input type="form-control" [(ngModel)]="Xi">
+            <md-slider [(ngModel)]="Xi" [thumb-label]=true></md-slider>
+          </td>
+          <td>
+            {{Xi}}
           </td>
         </tr>
 
         <tr>
           <td> Ei - Total depth of water removed by ET from the plant-root zone during day</td>
           <td>
-            <input type="form-control" [(ngModel)]="Ei">
+            <md-slider [(ngModel)]="Ei" [thumb-label]=true></md-slider>
+
           </td>
+          <td>{{Ei}}</td>
         </tr>
         <tr>
           <td> Mm - Moisture-storage capcity of plant root zone</td>
           <td>
-            <input type="form-control" [(ngModel)]="Mm">
+            <md-slider [(ngModel)]="Mm" [thumb-label]=true></md-slider>
           </td>
+          <td>{{Mm}}</td>
         </tr>
         <tr>
           <td> DR - Daily rate of direct recharge</td>
           <td>
-            <input type="form-control" [(ngModel)]="DR">
+            <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
           </td>
+          <td>{{DR}}</td>
         </tr>
 
         <tr>
@@ -40,39 +52,17 @@
             {{DayValues[0].Mi}}
           </td>
         </tr>
+ 
 
     </table>
-  </div>
-
-</div>
-<div class="row">
-  <div class="col-sm">
-    <div class="well well-sm">
-      <p>If Xi - Ei
-        <=M m, then Qi=D R and Mi=X i - Ei </p>
-    </div>
-  </div>
-  <div class="col-sm">
-    <div class="well well-sm">
-      <p>If Xi - Ei > Mm, then Qi = (Xi - Ei - Mm) + DR and Mi = Mm </p>
-    </div>
-  </div>
-
-</div>
+    
+</md-card-content>
+</md-card>
 
 
-<div class="row">
-  <div class="col">
+
+<md-card style="height: 400px; min-height: 250px">
+  <md-card-content>
     <app-ngx-test *ngIf="chartData" [data]="chartData"> </app-ngx-test>
-  </div>
-</div>
-
-
-<div class="row">
-  <div class="col">
-    <p>
-      Sliders go here
-      </p>
-    <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
- </div>
-</div>
+  </md-card-content>
+</md-card>

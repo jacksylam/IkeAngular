@@ -26,10 +26,7 @@
   </div>
 </nav>-->
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<!-- <nav md-tab-nav-bar>
   <a class="navbar-brand">
       <img src="./assets/images/EPSCoR-Logo.placeholder200x65.png" class="d-inline-block align-top">
   </a>
@@ -47,5 +44,17 @@
      
     </ul>
   </div>
+</nav> -->
+
+<nav md-tab-nav-bar aria-label="weather navigation links">
+    <img src="./assets/images/EPSCoR-Logo.placeholder200x65.png">
+    <a md-tab-link
+        *ngFor="let routeLink of routeLinks; let i = index"
+         [routerLink]="routeLink.link"
+         [active]="activeLinkIndex === i"
+         (click)="activeLinkIndex = i">
+         {{routeLink.label}}
+     </a>
 </nav>
+
 <router-outlet></router-outlet>

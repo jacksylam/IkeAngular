@@ -1,8 +1,7 @@
 
 import { Component, OnInit, OnChanges, SimpleChanges, Input } from '@angular/core';
 import { DayData } from '../day-data';
-import * as bootstrapSlider from 'bootstrap-slider';
-import * as d3 from 'd3';
+
 
 
 @Component({
@@ -31,14 +30,7 @@ export class DashboardComponent implements OnInit, OnChanges {
     this.Mm = 10;
     this.DR = 10;
 
- this.slider =  new bootstrapSlider.Slider('#ex1', {
-	formatter: function(value) {
-		return 'Current value: ' + value;
-	}
-});
-
-
-    
+  
   }
 
   ngOnInit() {
@@ -164,6 +156,8 @@ export class DashboardComponent implements OnInit, OnChanges {
   }
 
   
-
+    onInput(event: any) {
+      console.log("This is emitted as the thumb slides");
+    }
     
 }
