@@ -1,10 +1,51 @@
 <!--The whole content below can be removed with the new code.-->
-<div style="text-align:center">
+<!--<div style="text-align:center">
   <h1>
     Welcome to {{title}}!!
   </h1>
+</div>-->
+
+
+<!--<nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
+
+  <a class="navbar-brand">
+      <img src="./assets/images/EPSCoR-Logo.placeholder200x65.png" class="d-inline-block align-top">
+  </a>
+  <div class="collapse navbar-collapse">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+      </li>
+            <li class="nav-item">
+
+      <a class="nav-item nav-link" routerLink="/recharge" routerLinkActive="active">Recharge</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>-->
 
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-<a class="nav-link" routerLink="/recharge" routerLinkActive="active">Recharge</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand">
+      <img src="./assets/images/EPSCoR-Logo.placeholder200x65.png" class="d-inline-block align-top">
+  </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+      <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-item nav-link" routerLink="/recharge" routerLinkActive="active">Recharge</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-item nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </li>
+     
+    </ul>
+  </div>
 </nav>
 <router-outlet></router-outlet>

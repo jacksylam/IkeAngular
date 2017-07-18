@@ -1,20 +1,25 @@
+
 import { Component, OnInit, OnChanges, SimpleChanges, Input } from '@angular/core';
-import { DayData } from '../day-data'
+import { DayData } from '../day-data';
+import * as bootstrapSlider from 'bootstrap-slider';
+import * as d3 from 'd3';
+
 
 @Component({
-  selector: 'app-recharge',
-  templateUrl: './recharge.component.html',
-  styleUrls: ['./recharge.component.css']
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
-export class RechargeComponent implements OnInit, OnChanges {
+export class DashboardComponent implements OnInit, OnChanges {
+  
 
   private chartData: Array<any>;
-
 
   @Input() private Xi: number;
   @Input() private Ei: number;
   @Input() private Mm: number;
   @Input() private DR: number;
+  @Input() private slider: any;
   //  private Qi: number;
   //   private Mi: number;
   private DayValues: Array<DayData>;
@@ -26,9 +31,18 @@ export class RechargeComponent implements OnInit, OnChanges {
     this.Mm = 10;
     this.DR = 10;
 
+ this.slider =  new bootstrapSlider.Slider('#ex1', {
+	formatter: function(value) {
+		return 'Current value: ' + value;
+	}
+});
+
+
+    
   }
 
   ngOnInit() {
+ 
     this.calculateMonthData();
 
     this.generateData();
@@ -148,4 +162,8 @@ export class RechargeComponent implements OnInit, OnChanges {
 
 
   }
+
+  
+
+    
 }

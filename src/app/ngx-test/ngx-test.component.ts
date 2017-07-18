@@ -1,3 +1,4 @@
+import * as d3 from 'd3';
 
 //our root app component
 import {Component, Input} from '@angular/core';
@@ -25,6 +26,12 @@ export class NgxTestComponent {
   xAxisLabel = 'Day';
   showYAxisLabel = true;
   yAxisLabel = 'Qi';
+ 
+ curve = d3.curveLinear;
+
+ axisFormat(val) {
+  return  val.toLocaleString(); 
+}
 
 
   colorScheme = {

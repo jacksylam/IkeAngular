@@ -18,14 +18,16 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-     "styles": [
-    "styles.css",
-    "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-  ],
-  "scripts": [
-    "../node_modules/jquery/dist/jquery.min.js",
-    "../node_modules/bootstrap/dist/js/bootstrap.min.js"
-  ],
+      "styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../node_modules/bootstrap-slider/dist/bootstrap-slider.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
