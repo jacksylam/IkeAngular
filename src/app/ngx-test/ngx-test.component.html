@@ -1,6 +1,4 @@
- 
 <ngx-charts-line-chart
-      [view]="view"
       [scheme]="colorScheme"
       [results]="data"
       [gradient]="gradient"
@@ -13,7 +11,6 @@
       [yAxisLabel]="yAxisLabel"
       [autoScale]="autoScale"
       [curve]="curve"
-      [xAxisTickFormatting] = "axisFormat"
-  
       (select)="onSelect($event)">
+
     </ngx-charts-line-chart>

@@ -1,14 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+// import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
 import { MaterialModule } from '@angular/material';
-
-
-
+import { FormsModule } from '@angular/forms';
 import {MdAutocompleteModule} from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RechargeComponent } from './recharge/recharge.component';
@@ -28,13 +28,14 @@ import 'hammerjs';
     DashboardComponent
   ],
   imports: [
-    NgbModule.forRoot(),
+    // NgbModule.forRoot(),
     BrowserModule,
     FormsModule,
     AppRoutingModule,
    BrowserAnimationsModule,
    NgxChartsModule,
-   MaterialModule
+   MaterialModule,
+   FlexLayoutModule
 
   ],
   providers: [],

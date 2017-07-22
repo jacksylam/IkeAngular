@@ -1,72 +1,63 @@
 <section class="mat-typography">
 
-  <md-card>
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box" >
+        <div fxFlex>
+  <md-card style="min-height:500px">
     <md-card-content>
-      <table class="table table-striped">
-        <caption style="caption-side:bottom">
-          <p>If Xi - Ei "
+
+          <!-- <p>If Xi - Ei 
             <=M m, then Qi=D R and Mi=X i - Ei <br>
               If Xi - Ei > Mm, then Qi = (Xi - Ei - Mm) + DR and Mi = Mm
-              <p>
-        </caption>
-        <tbody>
-          <tr>
-            <td>Xi - Interim moisture storage:</td>
-            <td>
-              <md-slider [(ngModel)]="Xi" [thumb-label]=true></md-slider>
-            </td>
-            <td>
-              {{Xi}}
-            </td>
-          </tr>
+              <p> -->
 
-          <tr>
-            <td> Ei - Total depth of water removed by ET from the plant-root zone during day</td>
-            <td>
-              <md-slider [(ngModel)]="Ei" [thumb-label]=true></md-slider>
 
-            </td>
-            <td>{{Ei}}</td>
-          </tr>
-          <tr>
-            <td> Mm - Moisture-storage capcity of plant root zone</td>
-            <td>
-              <md-slider [(ngModel)]="Mm" [thumb-label]=true></md-slider>
-            </td>
-            <td>{{Mm}}</td>
-          </tr>
-          <tr>
-            <td> DR - Daily rate of direct recharge</td>
-            <td>
+             DR - Daily rate of direct recharge
+            
               <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
-            </td>
-            <td>{{DR}}</td>
-          </tr>
+          
+            {{DR}}
+   
 
-          <tr>
-            <td> Qi - Ground water recharge during day</td>
-            <td>
-              {{DayValues[0].Qi}}
-            </td>
-          </tr>
-          <tr>
-            <td> Mi - Moisture storage at the end of the current day</td>
-            <td>
-              {{DayValues[0].Mi}}
-            </td>
-          </tr>
+    <!-- </md-card-content>
+  </md-card> -->
 
 
-      </table>
 
-    </md-card-content>
+    <!-- <md-card style="height: 400px; min-height: 250px;"> 
+    <md-card-content>  -->
+      <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel] = "xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
+     </md-card-content>
   </md-card>
+</div>
 
 
+<div fxFlex>
 
-  <md-card style="height: 400px; min-height: 250px">
+  <md-card style="min-height:500px">
     <md-card-content>
-      <app-ngx-test *ngIf="chartData" [data]="chartData"> </app-ngx-test>
-    </md-card-content>
-  </md-card>
+
+          <!-- <p>If Xi - Ei 
+            <=M m, then Qi=D R and Mi=X i - Ei <br>
+              If Xi - Ei > Mm, then Qi = (Xi - Ei - Mm) + DR and Mi = Mm
+              <p> -->
+
+
+             DR - Daily rate of direct recharge
+            
+              <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
+          
+            {{DR}}
+   
+
+
+
+
+
+    <!-- <md-card style="height: 400px; min-height: 250px;"> 
+    <md-card-content>  -->
+      <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel] = "xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
+     </md-card-content>
+  </md-card> 
+  </div>
+</div>
 </section>
