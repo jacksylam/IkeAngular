@@ -26,7 +26,7 @@ export class NgxTestComponent {
   showXAxis = true;
   showYAxis = true;
   gradient = true;
-  showLegend = true;
+  showLegend = false;
   showXAxisLabel = true;
   // xAxisLabel = 'Day';
   showYAxisLabel = true;

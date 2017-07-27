@@ -7,6 +7,7 @@ import { MaterialModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import {MdAutocompleteModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AgmCoreModule } from '@agm/core';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +18,10 @@ import { NgxTestComponent } from './ngx-test/ngx-test.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
+import { ThreeJsComponent } from './three-js/three-js.component';
+
+import * as $ from 'jquery';
+import { GooglemapComponent } from './googlemap/googlemap.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,9 @@ import 'hammerjs';
     // LineChartComponent,
     NgxTestComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    ThreeJsComponent,
+    GooglemapComponent
   ],
   imports: [
     // NgbModule.forRoot(),
@@ -35,7 +42,10 @@ import 'hammerjs';
    BrowserAnimationsModule,
    NgxChartsModule,
    MaterialModule,
-   FlexLayoutModule
+   FlexLayoutModule,
+   AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo'
+    })
 
   ],
   providers: [],

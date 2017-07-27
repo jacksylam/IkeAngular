@@ -1,63 +1,101 @@
 <section class="mat-typography">
 
-    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box" >
-        <div fxFlex>
-  <md-card style="min-height:500px">
-    <md-card-content>
+  <div class="container">
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
 
-          <!-- <p>If Xi - Ei 
-            <=M m, then Qi=D R and Mi=X i - Ei <br>
-              If Xi - Ei > Mm, then Qi = (Xi - Ei - Mm) + DR and Mi = Mm
-              <p> -->
-
-
+        <md-card style="min-height:500px">
+          <md-card-content>
              DR - Daily rate of direct recharge
-            
-              <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
-          
-            {{DR}}
-   
+             <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider> {{DR}}
+            <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
 
-    <!-- </md-card-content>
-  </md-card> -->
+          </md-card-content>
+        </md-card>
+        <md-card style="min-height:500px">
+          <md-card-content>
+            <app-three-js></app-three-js>
+          </md-card-content>
+        </md-card>
 
-
-
-    <!-- <md-card style="height: 400px; min-height: 250px;"> 
-    <md-card-content>  -->
-      <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel] = "xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
-     </md-card-content>
-  </md-card>
-</div>
-
-
-<div fxFlex>
-
-  <md-card style="min-height:500px">
-    <md-card-content>
-
-          <!-- <p>If Xi - Ei 
-            <=M m, then Qi=D R and Mi=X i - Ei <br>
-              If Xi - Ei > Mm, then Qi = (Xi - Ei - Mm) + DR and Mi = Mm
-              <p> -->
-
-
+        <md-card style="min-height:500px">
+          <md-card-content>
              DR - Daily rate of direct recharge
-            
-              <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
-          
-            {{DR}}
-   
+             <md-slider [(ngModel)]="DR2" [thumb-label]=true></md-slider> {{DR}}
+            <app-ngx-test *ngIf="chartData2" [data]="chartData2" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
 
-
-
-
-
-    <!-- <md-card style="height: 400px; min-height: 250px;"> 
-    <md-card-content>  -->
-      <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel] = "xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
-     </md-card-content>
-  </md-card> 
+          </md-card-content>
+        </md-card>
+    </div>
   </div>
-</div>
+
+  <div class="container">
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
+
+        <md-card style="min-height:500px">
+          <md-card-content>
+             DR - Daily rate of direct recharge
+             <md-slider [(ngModel)]="DR3" [thumb-label]=true></md-slider> {{DR}}
+            <app-ngx-test *ngIf="chartData3" [data]="chartData3" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
+
+          </md-card-content>
+        </md-card>
+
+               <md-card style="min-height:500px; min-width:500px">
+          <md-card-content>
+             <!-- DR - Daily rate of direct recharge
+             <md-slider [(ngModel)]="DR4" [thumb-label]=true></md-slider> {{DR}}
+            <app-ngx-test *ngIf="chartData4" [data]="chartData4" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test> -->
+
+                  <app-googlemap></app-googlemap>
+
+          </md-card-content>
+        </md-card>
+
+
+        <md-card style="min-height:500px">
+          <md-card-content>
+             DR - Daily rate of direct recharge
+             <md-slider [(ngModel)]="DR5" [thumb-label]=true></md-slider> {{DR}}
+            <app-ngx-test *ngIf="chartData5" [data]="chartData5" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
+
+          </md-card-content>
+        </md-card>
+    </div>
+      </div>
+
+  <!-- <div class="container">
+  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
+    <div fxFlex>
+      <md-card style="min-height:500px">
+        <md-card-content>
+
+  
+
+          DR - Daily rate of direct recharge
+
+          <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
+
+          {{DR}}
+          <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
+        </md-card-content>
+      </md-card>
+    </div>
+
+
+    <div fxFlex>
+
+      <md-card style="min-height:500px">
+        <md-card-content>
+          DR - Daily rate of direct recharge
+
+          <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
+
+          {{DR}}
+
+          <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
+        </md-card-content>
+      </md-card>
+    </div>
+  </div>
+  </div> -->
 </section>
