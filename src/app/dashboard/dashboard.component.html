@@ -1,26 +1,28 @@
 <section class="mat-typography">
 
   <div class="container">
-    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
 
-        <md-card style="min-height:500px">
+        <md-card style="min-height:350px">
           <md-card-content>
+            <md-card-title>Model 1</md-card-title>
              DR - Daily rate of direct recharge
              <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider> {{DR}}
             <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
 
           </md-card-content>
         </md-card>
-        <md-card style="min-height:500px">
+        <md-card style="min-height:350px">
           <md-card-content>
             <app-three-js></app-three-js>
           </md-card-content>
         </md-card>
 
-        <md-card style="min-height:500px">
+        <md-card style="min-height:350px">
+          <md-card-title>Model 2</md-card-title>
           <md-card-content>
              DR - Daily rate of direct recharge
-             <md-slider [(ngModel)]="DR2" [thumb-label]=true></md-slider> {{DR}}
+             <md-slider [(ngModel)]="DR2" [thumb-label]=true></md-slider> {{DR2}}
             <app-ngx-test *ngIf="chartData2" [data]="chartData2" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
 
           </md-card-content>
@@ -29,12 +31,13 @@
   </div>
 
   <div class="container">
-    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
 
-        <md-card style="min-height:500px">
+        <md-card style="min-height:350px">
+          <md-card-title>Model 3</md-card-title>
           <md-card-content>
              DR - Daily rate of direct recharge
-             <md-slider [(ngModel)]="DR3" [thumb-label]=true></md-slider> {{DR}}
+             <md-slider [(ngModel)]="DR3" [thumb-label]=true></md-slider> {{DR3}}
             <app-ngx-test *ngIf="chartData3" [data]="chartData3" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
 
           </md-card-content>
@@ -52,10 +55,11 @@
         </md-card>
 
 
-        <md-card style="min-height:500px">
+        <md-card style="min-height:350px">
+          <md-card-title>Model 4</md-card-title>
           <md-card-content>
              DR - Daily rate of direct recharge
-             <md-slider [(ngModel)]="DR5" [thumb-label]=true></md-slider> {{DR}}
+             <md-slider [(ngModel)]="DR5" [thumb-label]=true></md-slider> {{DR5}}
             <app-ngx-test *ngIf="chartData5" [data]="chartData5" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
 
           </md-card-content>

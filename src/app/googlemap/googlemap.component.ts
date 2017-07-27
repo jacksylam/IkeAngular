@@ -1,18 +1,39 @@
 import { Component, OnInit } from '@angular/core';
+import { AgmMap, AgmDataLayer } from '@agm/core';
+import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-googlemap',
   templateUrl: './googlemap.component.html',
-  styleUrls: ['./googlemap.component.css']
+  styleUrls: ['./googlemap.component.css'],
 })
 export class GooglemapComponent implements OnInit {
-lat: number = 21.3159;
-  lng: number = -157.8033;
+  lat: number = 21.2998;
+  lng: number = -157.8176;
 
+  results: string[];
+ 
+  // geojson: Object = "https://storage.googleapis.com/mapsdevsite/json/google.json";
   
-  constructor() { }
+  
+     obj: object;
+   
+  constructor(private http : Http) { 
+ 
 
-  ngOnInit() {
   }
 
+  ngOnInit() {
+             this.getJSON().subscribe(data => this.obj=data, error => console.log(error));
+
+  }
+
+   public getJSON(): Observable<any> {
+         return this.http.get("../../assets/aquifer.geojson")
+                         .map((res:any) => res.json())
+
+     }
+  
 }

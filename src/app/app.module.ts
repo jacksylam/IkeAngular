@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import {MdAutocompleteModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AgmCoreModule } from '@agm/core';
+import { HttpModule } from '@angular/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,9 +20,9 @@ import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
 import { ThreeJsComponent } from './three-js/three-js.component';
+import { GooglemapComponent } from './googlemap/googlemap.component';
 
 import * as $ from 'jquery';
-import { GooglemapComponent } from './googlemap/googlemap.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { GooglemapComponent } from './googlemap/googlemap.component';
    FlexLayoutModule,
    AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo'
-    })
+    }),
+    HttpModule
 
   ],
   providers: [],

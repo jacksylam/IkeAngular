@@ -20,7 +20,7 @@ export class NgxTestComponent {
   @Input() private xAxisLabel: String;
   @Input() private yAxisLabel: String;
 
-  view: any[] = [700, 400];
+  view: any[] = [500, 350];
 
   // options
   showXAxis = true;
