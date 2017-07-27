@@ -46,6 +46,7 @@ export class ThreeJsComponent implements OnInit {
         this.renderer.render(this.scene, this.camera);
     }
 
+    
 }
 
 

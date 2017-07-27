@@ -19,6 +19,7 @@ export class GooglemapComponent implements OnInit {
   
   
      obj: object;
+     obj2: object;
    
   constructor(private http : Http) { 
  
@@ -27,11 +28,18 @@ export class GooglemapComponent implements OnInit {
 
   ngOnInit() {
              this.getJSON().subscribe(data => this.obj=data, error => console.log(error));
+             this.getJSON2().subscribe(data => this.obj2=data, error => console.log(error));
 
   }
 
    public getJSON(): Observable<any> {
          return this.http.get("../../assets/aquifer.geojson")
+                         .map((res:any) => res.json())
+
+     }
+
+        public getJSON2(): Observable<any> {
+         return this.http.get("../../assets/wellNew.geojson")
                          .map((res:any) => res.json())
 
      }

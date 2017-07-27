@@ -1,4 +1,5 @@
-  <agm-map [latitude]="lat" [longitude]="lng">
- <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
- <agm-data-layer [geoJson]="obj"></agm-data-layer>>
-  </agm-map>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]=14>
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+   <agm-data-layer [geoJson]="obj"></agm-data-layer> 
+  <agm-data-layer [geoJson]="obj2"></agm-data-layer>
+</agm-map>
