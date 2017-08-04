@@ -4,8 +4,13 @@ import { DayData } from '../day-data';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ObservableMedia } from '@angular/flex-layout';
 
+import { Http, Response } from '@angular/http';
 import { Observable } from "rxjs/Observable";
 import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/map';
+
+
+
 
 @Component({
   selector: 'app-dashboard',
@@ -29,8 +34,8 @@ export class DashboardComponent implements OnInit, OnChanges {
 
   public cols: Observable<number>;
 
-  private xAxisLabel: String;
-  private yAxisLabel: String;
+  private xAxisLabel: string;
+  private yAxisLabel: string;
 
   private FakeMonths: Array<any>;
 
@@ -48,7 +53,10 @@ export class DashboardComponent implements OnInit, OnChanges {
     private DayValues5: Array<DayData>;
   private chartData5: Array<any>;
 
-  constructor() {
+  private oximinJsonData: Array<any>;
+  private oximinChartData: Array<any>;
+
+  constructor(private http: Http) {
     this.DayValues = [];
     this.Xi = 10;
     this.Ei = 10;
@@ -72,6 +80,8 @@ export class DashboardComponent implements OnInit, OnChanges {
     this.generateFakeMonths();
 
 
+    
+
   }
 
   ngOnInit() {
@@ -92,37 +102,10 @@ export class DashboardComponent implements OnInit, OnChanges {
       this.calculateMonthData5();
     this.generateData5();
     
-    // give everything a chance to get loaded before starting the animation to reduce choppiness
-    // setTimeout(() => {
-
-
-    //   // change the data periodically
-    //   setInterval(() => this.generateData(), 3000);
-    // }, 1000);
-
-
-    //    if (this.observableMedia.isActive("xs")) {
-    //   this.cols = Observable.of(1);
-    // } else if (this.observableMedia.isActive("sm") || this.observableMedia.isActive("md")) {
-    //   this.cols = Observable.of(2);
-    // } else if (this.observableMedia.isActive("lg") || this.observableMedia.isActive("xl")) {
-    //   this.cols = Observable.of(3);
-    // }
-
-    // // observe changes
-    // this.observableMedia.asObservable()
-    // .subscribe(change => {
-    //   switch (change.mqAlias) {
-    //     case "xs":
-    //       return this.cols = Observable.of(1);
-    //     case "sm":
-    //     case "md":
-    //       return this.cols = Observable.of(2);
-    //     case "lg":
-    //     case "xl":
-    //       return this.cols = Observable.of(3);
-    //   }
-    // });
+  // this.getJSON().subscribe(data => this.oximinJsonData = data, error => console.log(error));
+  // this.generateOximinChartData();
+  this.getJSON().subscribe( data => this.generateOximinChartData(data), error => console.log(error));
+  // this.generateOximinChartData();
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -370,6 +353,8 @@ export class DashboardComponent implements OnInit, OnChanges {
     generateData5() {
     this.chartData5 = [];
 
+    
+
     var thing = {
       name: "Ground Water Recharge During Day",
       series: []
@@ -414,8 +399,52 @@ export class DashboardComponent implements OnInit, OnChanges {
 
   }
 
-  onInput(event: any) {
-    console.log("This is emitted as the thumb slides");
+
+  generateOximinChartData(data){
+    this.oximinJsonData = data;
+    this.oximinChartData = [];
+
+      var halawaShaft = {
+        name: "Halawa Shaft",
+        series: []
+      }
+
+
+      var kalauaoWells = {
+        name:"Kalauao Wells",
+        series: []
+      }
+      
+      var pearlCity = {
+        name: "Pearl City III",
+        series: []
+      }
+
+      var kunia = {
+        name: "Kunia",
+        series:[]
+      }
+
+      for(let i = 0; i < this.oximinJsonData.length; i++){
+        halawaShaft.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Halawa Shaft']});
+        kalauaoWells.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Kalauao Wells']});
+        pearlCity.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Pearl City III']});
+        kunia.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Kunia III']});
+      }
+
+      this.oximinChartData.push(halawaShaft);
+      this.oximinChartData.push(kalauaoWells);
+      this.oximinChartData.push(pearlCity);
+      this.oximinChartData.push(kunia);
+
+      console.log(this.oximinChartData);
+
+  }
+
+ public getJSON(): Observable<any> {
+    return this.http.get("../../assets/Oximin.json")
+      .map((res: any) => res.json())
+
   }
 
 

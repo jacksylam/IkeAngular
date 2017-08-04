@@ -23,6 +23,7 @@ import { ThreeJsComponent } from './three-js/three-js.component';
 import { GooglemapComponent } from './googlemap/googlemap.component';
 
 import * as $ from 'jquery';
+import { NgxOximinComponent } from './ngx-oximin/ngx-oximin.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import * as $ from 'jquery';
     HomeComponent,
     DashboardComponent,
     ThreeJsComponent,
-    GooglemapComponent
+    GooglemapComponent,
+    NgxOximinComponent
   ],
   imports: [
     // NgbModule.forRoot(),

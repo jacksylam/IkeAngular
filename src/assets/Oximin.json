@@ -1,0 +1,902 @@
+[
+    {
+        "Iteration": "1",
+        "TIME": "2.21",
+        "OF": "-56.94328386",
+        "Halawa Shaft": "16.50980539",
+        "Kalauao Wells": "15.72627613",
+        "Pearl City III": "8.63010837",
+        "Kunia III": "16.07709397"
+    },
+    {
+        "Iteration": "2",
+        "TIME": "1.83",
+        "OF": "-55.68616678",
+        "Halawa Shaft": "15.65033815",
+        "Kalauao Wells": "15.68942858",
+        "Pearl City III": "8.80143519",
+        "Kunia III": "15.54496486"
+    },
+    {
+        "Iteration": "3",
+        "TIME": "2.43",
+        "OF": "-61.05041114",
+        "Halawa Shaft": "17.94827575",
+        "Kalauao Wells": "17.3401594",
+        "Pearl City III": "10.04061588",
+        "Kunia III": "15.7213601"
+    },
+    {
+        "Iteration": "4",
+        "TIME": "0.92",
+        "OF": "-57.0395428",
+        "Halawa Shaft": "15.63041559",
+        "Kalauao Wells": "18.05228137",
+        "Pearl City III": "7.11340983",
+        "Kunia III": "16.24343601"
+    },
+    {
+        "Iteration": "5",
+        "TIME": "2.08",
+        "OF": "-59.35562605",
+        "Halawa Shaft": "14.82009879",
+        "Kalauao Wells": "18.76217699",
+        "Pearl City III": "10.64059192",
+        "Kunia III": "15.13275835"
+    },
+    {
+        "Iteration": "6",
+        "TIME": "1.18",
+        "OF": "-60.35330778",
+        "Halawa Shaft": "15.60739932",
+        "Kalauao Wells": "19.51531432",
+        "Pearl City III": "8.41041248",
+        "Kunia III": "16.82018167"
+    },
+    {
+        "Iteration": "7",
+        "TIME": "0.79",
+        "OF": "-58.26889297",
+        "Halawa Shaft": "15.57034545",
+        "Kalauao Wells": "16.30002893",
+        "Pearl City III": "12.28069876",
+        "Kunia III": "14.11781982"
+    },
+    {
+        "Iteration": "8",
+        "TIME": "3.09",
+        "OF": "-60.96127209",
+        "Halawa Shaft": "16.90834906",
+        "Kalauao Wells": "18.91341823",
+        "Pearl City III": "12.04100811",
+        "Kunia III": "13.09849669"
+    },
+    {
+        "Iteration": "9",
+        "TIME": "3.82",
+        "OF": "-66.78772361",
+        "Halawa Shaft": "19.23599061",
+        "Kalauao Wells": "18.83310991",
+        "Pearl City III": "13.79977559",
+        "Kunia III": "14.9188475"
+    },
+    {
+        "Iteration": "10",
+        "TIME": "2.95",
+        "OF": "-65.44887023",
+        "Halawa Shaft": "18.54195513",
+        "Kalauao Wells": "18.75703673",
+        "Pearl City III": "13.12217954",
+        "Kunia III": "15.02769883"
+    },
+    {
+        "Iteration": "11",
+        "TIME": "3.44",
+        "OF": "-67.22782421",
+        "Halawa Shaft": "19.76942667",
+        "Kalauao Wells": "19.63351928",
+        "Pearl City III": "15.43883583",
+        "Kunia III": "12.38604243"
+    },
+    {
+        "Iteration": "12",
+        "TIME": "1.83",
+        "OF": "-64.03133271",
+        "Halawa Shaft": "18.52058253",
+        "Kalauao Wells": "19.82314083",
+        "Pearl City III": "14.7138061",
+        "Kunia III": "10.97380326"
+    },
+    {
+        "Iteration": "13",
+        "TIME": "0.79",
+        "OF": "-63.47330091",
+        "Halawa Shaft": "18.32515618",
+        "Kalauao Wells": "19.28684334",
+        "Pearl City III": "15.18830837",
+        "Kunia III": "10.67299302"
+    },
+    {
+        "Iteration": "14",
+        "TIME": "1.19",
+        "OF": "-62.54622513",
+        "Halawa Shaft": "16.74700732",
+        "Kalauao Wells": "18.57610135",
+        "Pearl City III": "14.36293029",
+        "Kunia III": "12.86018616"
+    },
+    {
+        "Iteration": "15",
+        "TIME": "1.59",
+        "OF": "-64.75995152",
+        "Halawa Shaft": "19.49531481",
+        "Kalauao Wells": "17.30634044",
+        "Pearl City III": "16.84187284",
+        "Kunia III": "11.11642343"
+    },
+    {
+        "Iteration": "16",
+        "TIME": "1.59",
+        "OF": "-65.04831821",
+        "Halawa Shaft": "18.30329502",
+        "Kalauao Wells": "17.21913402",
+        "Pearl City III": "17.41469567",
+        "Kunia III": "12.11119349"
+    },
+    {
+        "Iteration": "17",
+        "TIME": "1.59",
+        "OF": "-66.28860313",
+        "Halawa Shaft": "15.90611095",
+        "Kalauao Wells": "15.75617957",
+        "Pearl City III": "19.18003442",
+        "Kunia III": "15.44627819"
+    },
+    {
+        "Iteration": "18",
+        "TIME": "1.59",
+        "OF": "-68.77021323",
+        "Halawa Shaft": "17.61169264",
+        "Kalauao Wells": "15.35129384",
+        "Pearl City III": "18.46975923",
+        "Kunia III": "17.33746752"
+    },
+    {
+        "Iteration": "19",
+        "TIME": "0.79",
+        "OF": "-67.23554204",
+        "Halawa Shaft": "17.55583071",
+        "Kalauao Wells": "18.06557989",
+        "Pearl City III": "17.21786337",
+        "Kunia III": "14.39626807"
+    },
+    {
+        "Iteration": "20",
+        "TIME": "1.58",
+        "OF": "-67.22740164",
+        "Halawa Shaft": "19.72809269",
+        "Kalauao Wells": "16.62300021",
+        "Pearl City III": "16.69976655",
+        "Kunia III": "14.17654218"
+    },
+    {
+        "Iteration": "21",
+        "TIME": "1.59",
+        "OF": "-67.77584304",
+        "Halawa Shaft": "19.02655195",
+        "Kalauao Wells": "18.45503669",
+        "Pearl City III": "15.69453978",
+        "Kunia III": "14.59971463"
+    },
+    {
+        "Iteration": "22",
+        "TIME": "1.19",
+        "OF": "-67.15450326",
+        "Halawa Shaft": "19.09690278",
+        "Kalauao Wells": "16.36319677",
+        "Pearl City III": "16.29943233",
+        "Kunia III": "15.39497138"
+    },
+    {
+        "Iteration": "23",
+        "TIME": "1.98",
+        "OF": "-68.27973062",
+        "Halawa Shaft": "19.06492036",
+        "Kalauao Wells": "17.72650813",
+        "Pearl City III": "16.65992662",
+        "Kunia III": "14.82837551"
+    },
+    {
+        "Iteration": "24",
+        "TIME": "1.98",
+        "OF": "-70.89107798",
+        "Halawa Shaft": "19.36386168",
+        "Kalauao Wells": "18.81592119",
+        "Pearl City III": "17.46607337",
+        "Kunia III": "15.24522174"
+    },
+    {
+        "Iteration": "25",
+        "TIME": "1.59",
+        "OF": "-71.00344336",
+        "Halawa Shaft": "19.90270058",
+        "Kalauao Wells": "18.08308342",
+        "Pearl City III": "17.9508886",
+        "Kunia III": "15.06677076"
+    },
+    {
+        "Iteration": "26",
+        "TIME": "1.19",
+        "OF": "-71.56238458",
+        "Halawa Shaft": "19.52944938",
+        "Kalauao Wells": "18.8466031",
+        "Pearl City III": "18.59840658",
+        "Kunia III": "14.58792551"
+    },
+    {
+        "Iteration": "27",
+        "TIME": "1.98",
+        "OF": "-72.5249149",
+        "Halawa Shaft": "19.51473321",
+        "Kalauao Wells": "18.39461782",
+        "Pearl City III": "18.78089908",
+        "Kunia III": "15.83466479"
+    },
+    {
+        "Iteration": "28",
+        "TIME": "1.58",
+        "OF": "-72.27059047",
+        "Halawa Shaft": "19.87514576",
+        "Kalauao Wells": "18.59097409",
+        "Pearl City III": "19.2099577",
+        "Kunia III": "14.59451293"
+    },
+    {
+        "Iteration": "29",
+        "TIME": "1.19",
+        "OF": "-72.67589806",
+        "Halawa Shaft": "18.52705594",
+        "Kalauao Wells": "18.73750395",
+        "Pearl City III": "19.59316844",
+        "Kunia III": "15.81816973"
+    },
+    {
+        "Iteration": "30",
+        "TIME": "1.98",
+        "OF": "-74.07969706",
+        "Halawa Shaft": "19.16666525",
+        "Kalauao Wells": "19.71920637",
+        "Pearl City III": "19.41089953",
+        "Kunia III": "15.78292592"
+    },
+    {
+        "Iteration": "31",
+        "TIME": "1.99",
+        "OF": "-73.34531657",
+        "Halawa Shaft": "19.67637014",
+        "Kalauao Wells": "19.61333557",
+        "Pearl City III": "18.60334885",
+        "Kunia III": "15.45226201"
+    },
+    {
+        "Iteration": "32",
+        "TIME": "1.58",
+        "OF": "-72.63710356",
+        "Halawa Shaft": "18.99146273",
+        "Kalauao Wells": "18.38657381",
+        "Pearl City III": "19.94207811",
+        "Kunia III": "15.31698891"
+    },
+    {
+        "Iteration": "33",
+        "TIME": "1.59",
+        "OF": "-73.77698953",
+        "Halawa Shaft": "19.09648806",
+        "Kalauao Wells": "18.45591862",
+        "Pearl City III": "19.28865378",
+        "Kunia III": "16.93592907"
+    },
+    {
+        "Iteration": "34",
+        "TIME": "1.58",
+        "OF": "-73.38146074",
+        "Halawa Shaft": "18.89224146",
+        "Kalauao Wells": "19.26498007",
+        "Pearl City III": "19.20632551",
+        "Kunia III": "16.01791369"
+    },
+    {
+        "Iteration": "35",
+        "TIME": "1.59",
+        "OF": "-73.59589717",
+        "Halawa Shaft": "19.21012701",
+        "Kalauao Wells": "19.48546497",
+        "Pearl City III": "19.29704749",
+        "Kunia III": "15.60325771"
+    },
+    {
+        "Iteration": "36",
+        "TIME": "1.98",
+        "OF": "-74.12601244",
+        "Halawa Shaft": "18.7815038",
+        "Kalauao Wells": "19.63525486",
+        "Pearl City III": "19.85753901",
+        "Kunia III": "15.85171476"
+    },
+    {
+        "Iteration": "37",
+        "TIME": "0.40",
+        "OF": "-73.1634432",
+        "Halawa Shaft": "18.39221778",
+        "Kalauao Wells": "19.25804393",
+        "Pearl City III": "19.25219116",
+        "Kunia III": "16.26099033"
+    },
+    {
+        "Iteration": "38",
+        "TIME": "1.58",
+        "OF": "-73.66832738",
+        "Halawa Shaft": "18.93905208",
+        "Kalauao Wells": "19.77042533",
+        "Pearl City III": "19.0209139",
+        "Kunia III": "15.93793608"
+    },
+    {
+        "Iteration": "39",
+        "TIME": "1.59",
+        "OF": "-74.09048729",
+        "Halawa Shaft": "18.60569867",
+        "Kalauao Wells": "19.66455328",
+        "Pearl City III": "19.44004719",
+        "Kunia III": "16.38018815"
+    },
+    {
+        "Iteration": "40",
+        "TIME": "1.59",
+        "OF": "-74.48656146",
+        "Halawa Shaft": "18.6038151",
+        "Kalauao Wells": "19.45214983",
+        "Pearl City III": "19.98303398",
+        "Kunia III": "16.44756256"
+    },
+    {
+        "Iteration": "41",
+        "TIME": "0.40",
+        "OF": "-74.09038297",
+        "Halawa Shaft": "18.63745426",
+        "Kalauao Wells": "19.49594417",
+        "Pearl City III": "19.63123378",
+        "Kunia III": "16.32575076"
+    },
+    {
+        "Iteration": "42",
+        "TIME": "1.98",
+        "OF": "-74.65922271",
+        "Halawa Shaft": "18.88036144",
+        "Kalauao Wells": "19.39157961",
+        "Pearl City III": "19.93361065",
+        "Kunia III": "16.45367101"
+    },
+    {
+        "Iteration": "43",
+        "TIME": "1.59",
+        "OF": "-75.02833496",
+        "Halawa Shaft": "19.16592967",
+        "Kalauao Wells": "19.70509302",
+        "Pearl City III": "19.9356447",
+        "Kunia III": "16.22166757"
+    },
+    {
+        "Iteration": "44",
+        "TIME": "1.18",
+        "OF": "-74.73743825",
+        "Halawa Shaft": "19.00801315",
+        "Kalauao Wells": "19.43408495",
+        "Pearl City III": "19.88870091",
+        "Kunia III": "16.40663924"
+    },
+    {
+        "Iteration": "45",
+        "TIME": "1.59",
+        "OF": "-75.08611414",
+        "Halawa Shaft": "19.39592742",
+        "Kalauao Wells": "19.69544708",
+        "Pearl City III": "19.5320728",
+        "Kunia III": "16.46266685"
+    },
+    {
+        "Iteration": "46",
+        "TIME": "1.98",
+        "OF": "-75.30051386",
+        "Halawa Shaft": "19.11601385",
+        "Kalauao Wells": "19.55324983",
+        "Pearl City III": "19.91355594",
+        "Kunia III": "16.71769424"
+    },
+    {
+        "Iteration": "47",
+        "TIME": "1.99",
+        "OF": "-75.37534879",
+        "Halawa Shaft": "19.48100623",
+        "Kalauao Wells": "19.44650755",
+        "Pearl City III": "19.82527305",
+        "Kunia III": "16.62256195"
+    },
+    {
+        "Iteration": "48",
+        "TIME": "1.19",
+        "OF": "-75.81637221",
+        "Halawa Shaft": "19.86699329",
+        "Kalauao Wells": "19.83498473",
+        "Pearl City III": "19.63914265",
+        "Kunia III": "16.47525154"
+    },
+    {
+        "Iteration": "49",
+        "TIME": "1.19",
+        "OF": "-76.0355681",
+        "Halawa Shaft": "19.88296648",
+        "Kalauao Wells": "19.52630858",
+        "Pearl City III": "19.88772842",
+        "Kunia III": "16.73856461"
+    },
+    {
+        "Iteration": "50",
+        "TIME": "0.79",
+        "OF": "-76.91572537",
+        "Halawa Shaft": "19.99698183",
+        "Kalauao Wells": "19.98394068",
+        "Pearl City III": "19.75885975",
+        "Kunia III": "17.17594311"
+    },
+    {
+        "Iteration": "51",
+        "TIME": "0.004005403.97819255",
+        "OF": "",
+        "Halawa Shaft": "NaN",
+        "Kalauao Wells": "19.793101",
+        "Pearl City III": "19.83803813",
+        "Kunia III": "16.80912217"
+    },
+    {
+        "Iteration": "52",
+        "TIME": "0.004035006.08707393",
+        "OF": "19.95626763",
+        "Halawa Shaft": "19.50609419",
+        "Kalauao Wells": "",
+        "Pearl City III": "NaN",
+        "Kunia III": "16.46222659"
+    },
+    {
+        "Iteration": "53",
+        "TIME": "0.40",
+        "OF": "-75.93045954",
+        "Halawa Shaft": "19.5020832",
+        "Kalauao Wells": "19.7061377",
+        "Pearl City III": "19.99973294",
+        "Kunia III": "16.7225057"
+    },
+    {
+        "Iteration": "54",
+        "TIME": "0.004021199.70618703",
+        "OF": "19.67215198",
+        "Halawa Shaft": "19.79570153",
+        "Kalauao Wells": "",
+        "Pearl City III": "NaN",
+        "Kunia III": "16.75065281"
+    },
+    {
+        "Iteration": "55",
+        "TIME": "0.40",
+        "OF": "-75.59466159",
+        "Halawa Shaft": "19.49426056",
+        "Kalauao Wells": "19.61207353",
+        "Pearl City III": "19.98777778",
+        "Kunia III": "16.50054971"
+    },
+    {
+        "Iteration": "56",
+        "TIME": "1.19",
+        "OF": "-75.97490184",
+        "Halawa Shaft": "19.92416356",
+        "Kalauao Wells": "19.66586545",
+        "Pearl City III": "19.82192211",
+        "Kunia III": "16.56295072"
+    },
+    {
+        "Iteration": "57",
+        "TIME": "1.58",
+        "OF": "-76.09000712",
+        "Halawa Shaft": "19.94686103",
+        "Kalauao Wells": "19.71596876",
+        "Pearl City III": "19.74328",
+        "Kunia III": "16.68389732"
+    },
+    {
+        "Iteration": "58",
+        "TIME": "1.19",
+        "OF": "-76.02007508",
+        "Halawa Shaft": "19.95553618",
+        "Kalauao Wells": "19.78318477",
+        "Pearl City III": "19.68992264",
+        "Kunia III": "16.59143148"
+    },
+    {
+        "Iteration": "59",
+        "TIME": "0.79",
+        "OF": "-75.87375317",
+        "Halawa Shaft": "19.89307584",
+        "Kalauao Wells": "19.55901545",
+        "Pearl City III": "19.80421555",
+        "Kunia III": "16.61744632"
+    },
+    {
+        "Iteration": "60",
+        "TIME": "1.19",
+        "OF": "-75.80218216",
+        "Halawa Shaft": "19.64521853",
+        "Kalauao Wells": "19.56217033",
+        "Pearl City III": "19.7452327",
+        "Kunia III": "16.84956059"
+    },
+    {
+        "Iteration": "61",
+        "TIME": "1.58",
+        "OF": "-76.08216993",
+        "Halawa Shaft": "19.88666748",
+        "Kalauao Wells": "19.6828768",
+        "Pearl City III": "19.64615564",
+        "Kunia III": "16.86647"
+    },
+    {
+        "Iteration": "62",
+        "TIME": "1.98",
+        "OF": "-76.17078347",
+        "Halawa Shaft": "19.83885712",
+        "Kalauao Wells": "19.62048825",
+        "Pearl City III": "19.88793216",
+        "Kunia III": "16.82350594"
+    },
+    {
+        "Iteration": "63",
+        "TIME": "1.98",
+        "OF": "-76.49988834",
+        "Halawa Shaft": "19.71451637",
+        "Kalauao Wells": "19.93940868",
+        "Pearl City III": "19.78437013",
+        "Kunia III": "17.06159316"
+    },
+    {
+        "Iteration": "64",
+        "TIME": "1.19",
+        "OF": "-76.65124847",
+        "Halawa Shaft": "19.84210355",
+        "Kalauao Wells": "19.98043864",
+        "Pearl City III": "19.7801677",
+        "Kunia III": "17.04853857"
+    },
+    {
+        "Iteration": "65",
+        "TIME": "1.59",
+        "OF": "-76.87446845",
+        "Halawa Shaft": "19.84640216",
+        "Kalauao Wells": "19.86081886",
+        "Pearl City III": "19.89883413",
+        "Kunia III": "17.2684133"
+    },
+    {
+        "Iteration": "66",
+        "TIME": "0.79",
+        "OF": "-76.7183996",
+        "Halawa Shaft": "19.84723121",
+        "Kalauao Wells": "19.72715329",
+        "Pearl City III": "19.87658793",
+        "Kunia III": "17.26742717"
+    },
+    {
+        "Iteration": "67",
+        "TIME": "1.98",
+        "OF": "-77.02161323",
+        "Halawa Shaft": "19.90010737",
+        "Kalauao Wells": "19.92349452",
+        "Pearl City III": "19.81304153",
+        "Kunia III": "17.38496981"
+    },
+    {
+        "Iteration": "68",
+        "TIME": "0.40",
+        "OF": "-76.87406098",
+        "Halawa Shaft": "19.81489841",
+        "Kalauao Wells": "19.86488279",
+        "Pearl City III": "19.89373545",
+        "Kunia III": "17.30054434"
+    },
+    {
+        "Iteration": "69",
+        "TIME": "1.19",
+        "OF": "-77.17231129",
+        "Halawa Shaft": "19.99808246",
+        "Kalauao Wells": "19.93205279",
+        "Pearl City III": "19.91769364",
+        "Kunia III": "17.32448241"
+    },
+    {
+        "Iteration": "70",
+        "TIME": "1.58",
+        "OF": "-77.52595594",
+        "Halawa Shaft": "19.98102064",
+        "Kalauao Wells": "19.99433898",
+        "Pearl City III": "19.86774292",
+        "Kunia III": "17.6828534"
+    },
+    {
+        "Iteration": "71",
+        "TIME": "0.40",
+        "OF": "-76.9751",
+        "Halawa Shaft": "19.90338398",
+        "Kalauao Wells": "19.84875424",
+        "Pearl City III": "19.69483674",
+        "Kunia III": "17.52812503"
+    },
+    {
+        "Iteration": "72",
+        "TIME": "0.79",
+        "OF": "-76.93494299",
+        "Halawa Shaft": "19.94471448",
+        "Kalauao Wells": "19.78309493",
+        "Pearl City III": "19.86460066",
+        "Kunia III": "17.34253291"
+    },
+    {
+        "Iteration": "73",
+        "TIME": "1.98",
+        "OF": "-76.9425602",
+        "Halawa Shaft": "19.98212984",
+        "Kalauao Wells": "19.76920467",
+        "Pearl City III": "19.84385266",
+        "Kunia III": "17.34737303"
+    },
+    {
+        "Iteration": "74",
+        "TIME": "1.99",
+        "OF": "-76.80739328",
+        "Halawa Shaft": "19.84243743",
+        "Kalauao Wells": "19.74332174",
+        "Pearl City III": "19.8110401",
+        "Kunia III": "17.410594"
+    },
+    {
+        "Iteration": "75",
+        "TIME": "1.59",
+        "OF": "-77.15707582",
+        "Halawa Shaft": "19.94056586",
+        "Kalauao Wells": "19.90211863",
+        "Pearl City III": "19.92677443",
+        "Kunia III": "17.3876169"
+    },
+    {
+        "Iteration": "76",
+        "TIME": "0.80",
+        "OF": "-77.06469903",
+        "Halawa Shaft": "19.99077906",
+        "Kalauao Wells": "19.81943625",
+        "Pearl City III": "19.87956395",
+        "Kunia III": "17.37491977"
+    },
+    {
+        "Iteration": "77",
+        "TIME": "0.004011509.62916694",
+        "OF": "",
+        "Halawa Shaft": "NaN",
+        "Kalauao Wells": "19.80721105",
+        "Pearl City III": "19.83493953",
+        "Kunia III": "17.31746649"
+    },
+    {
+        "Iteration": "78",
+        "TIME": "0.40",
+        "OF": "-76.88547865",
+        "Halawa Shaft": "19.99643375",
+        "Kalauao Wells": "19.78835107",
+        "Pearl City III": "19.8602019",
+        "Kunia III": "17.24049193"
+    },
+    {
+        "Iteration": "79",
+        "TIME": "0.79",
+        "OF": "-77.04506216",
+        "Halawa Shaft": "19.94412451",
+        "Kalauao Wells": "19.84872623",
+        "Pearl City III": "19.93136858",
+        "Kunia III": "17.32084285"
+    },
+    {
+        "Iteration": "80",
+        "TIME": "1.19",
+        "OF": "-77.03870621",
+        "Halawa Shaft": "19.90648693",
+        "Kalauao Wells": "19.8191307",
+        "Pearl City III": "19.9565761",
+        "Kunia III": "17.35651248"
+    },
+    {
+        "Iteration": "81",
+        "TIME": "1.58",
+        "OF": "-77.20347701",
+        "Halawa Shaft": "19.96972136",
+        "Kalauao Wells": "19.88560601",
+        "Pearl City III": "19.96095969",
+        "Kunia III": "17.38718995"
+    },
+    {
+        "Iteration": "82",
+        "TIME": "1.58",
+        "OF": "-77.23956929",
+        "Halawa Shaft": "19.93379102",
+        "Kalauao Wells": "19.91653484",
+        "Pearl City III": "19.97049912",
+        "Kunia III": "17.4187443"
+    },
+    {
+        "Iteration": "83",
+        "TIME": "1.19",
+        "OF": "-77.18874072",
+        "Halawa Shaft": "19.88026009",
+        "Kalauao Wells": "19.87273998",
+        "Pearl City III": "19.98546017",
+        "Kunia III": "17.45028047"
+    },
+    {
+        "Iteration": "84",
+        "TIME": "1.98",
+        "OF": "-77.28033517",
+        "Halawa Shaft": "19.9609808",
+        "Kalauao Wells": "19.85779074",
+        "Pearl City III": "19.99560928",
+        "Kunia III": "17.46595435"
+    },
+    {
+        "Iteration": "85",
+        "TIME": "0.79",
+        "OF": "-77.50589971",
+        "Halawa Shaft": "19.95786684",
+        "Kalauao Wells": "19.96448828",
+        "Pearl City III": "19.99100304",
+        "Kunia III": "17.59254155"
+    },
+    {
+        "Iteration": "86",
+        "TIME": "1.19",
+        "OF": "-77.52380779",
+        "Halawa Shaft": "19.93796017",
+        "Kalauao Wells": "19.96383034",
+        "Pearl City III": "19.97886974",
+        "Kunia III": "17.64314754"
+    },
+    {
+        "Iteration": "87",
+        "TIME": "0.40",
+        "OF": "-77.53697223",
+        "Halawa Shaft": "19.97888182",
+        "Kalauao Wells": "19.98325859",
+        "Pearl City III": "19.93786953",
+        "Kunia III": "17.63696229"
+    },
+    {
+        "Iteration": "88",
+        "TIME": "1.60",
+        "OF": "-77.48801339",
+        "Halawa Shaft": "19.883374",
+        "Kalauao Wells": "19.9965111",
+        "Pearl City III": "19.97277749",
+        "Kunia III": "17.63535079"
+    },
+    {
+        "Iteration": "89",
+        "TIME": "0.79",
+        "OF": "-77.4823708",
+        "Halawa Shaft": "19.95258779",
+        "Kalauao Wells": "19.97739732",
+        "Pearl City III": "19.96733846",
+        "Kunia III": "17.58504723"
+    },
+    {
+        "Iteration": "90",
+        "TIME": "1.19",
+        "OF": "-77.38731942",
+        "Halawa Shaft": "19.90406328",
+        "Kalauao Wells": "19.97766904",
+        "Pearl City III": "19.95139875",
+        "Kunia III": "17.55418836"
+    },
+    {
+        "Iteration": "91",
+        "TIME": "1.19",
+        "OF": "-77.46961516",
+        "Halawa Shaft": "19.88924468",
+        "Kalauao Wells": "19.98661553",
+        "Pearl City III": "19.97661916",
+        "Kunia III": "17.6171358"
+    },
+    {
+        "Iteration": "92",
+        "TIME": "1.18",
+        "OF": "-77.49558898",
+        "Halawa Shaft": "19.91812446",
+        "Kalauao Wells": "19.99672634",
+        "Pearl City III": "19.98082915",
+        "Kunia III": "17.59990902"
+    },
+    {
+        "Iteration": "93",
+        "TIME": "1.19",
+        "OF": "-77.46380593",
+        "Halawa Shaft": "19.93998627",
+        "Kalauao Wells": "19.9831078",
+        "Pearl City III": "19.99562124",
+        "Kunia III": "17.54509062"
+    },
+    {
+        "Iteration": "94",
+        "TIME": "0.79",
+        "OF": "-77.38524167",
+        "Halawa Shaft": "19.91886939",
+        "Kalauao Wells": "19.9576647",
+        "Pearl City III": "19.96111065",
+        "Kunia III": "17.54759693"
+    },
+    {
+        "Iteration": "95",
+        "TIME": "1.98",
+        "OF": "-77.41728367",
+        "Halawa Shaft": "19.89772183",
+        "Kalauao Wells": "19.96894566",
+        "Pearl City III": "19.97877793",
+        "Kunia III": "17.57183825"
+    },
+    {
+        "Iteration": "96",
+        "TIME": "1.97",
+        "OF": "-77.47827307",
+        "Halawa Shaft": "19.91494656",
+        "Kalauao Wells": "19.99219923",
+        "Pearl City III": "19.98448334",
+        "Kunia III": "17.58664394"
+    },
+    {
+        "Iteration": "97",
+        "TIME": "0.79",
+        "OF": "-77.49035884",
+        "Halawa Shaft": "19.9291933",
+        "Kalauao Wells": "19.9966296",
+        "Pearl City III": "19.97207661",
+        "Kunia III": "17.59245933"
+    },
+    {
+        "Iteration": "98",
+        "TIME": "2.00",
+        "OF": "-77.47909667",
+        "Halawa Shaft": "19.94288599",
+        "Kalauao Wells": "19.99820554",
+        "Pearl City III": "19.96737966",
+        "Kunia III": "17.57062548"
+    },
+    {
+        "Iteration": "99",
+        "TIME": "1.58",
+        "OF": "-77.50234948",
+        "Halawa Shaft": "19.95606525",
+        "Kalauao Wells": "19.97770264",
+        "Pearl City III": "19.97738752",
+        "Kunia III": "17.59119406"
+    },
+    {
+        "Iteration": "100",
+        "TIME": "1.19",
+        "OF": "-77.51961803",
+        "Halawa Shaft": "19.95785155",
+        "Kalauao Wells": "19.98234646",
+        "Pearl City III": "19.98842101",
+        "Kunia III": "17.590999"
+    }
+]
