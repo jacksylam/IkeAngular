@@ -45,9 +45,7 @@
 
                <md-card style="min-height:500px; min-width:500px">
           <md-card-content>
-             <!-- DR - Daily rate of direct recharge
-             <md-slider [(ngModel)]="DR4" [thumb-label]=true></md-slider> {{DR}}
-            <app-ngx-test *ngIf="chartData4" [data]="chartData4" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test> -->
+        
 
                   <app-googlemap></app-googlemap>
 
@@ -55,51 +53,16 @@
         </md-card>
 
 
-        <md-card style="min-height:350px">
-          <md-card-title>Model 4</md-card-title>
+         <md-card style="min-height:350px">
+          <md-card-title>Simulation Data</md-card-title>
           <md-card-content>
-             DR - Daily rate of direct recharge
-             <md-slider [(ngModel)]="DR5" [thumb-label]=true></md-slider> {{DR5}}
-            <app-ngx-test *ngIf="chartData5" [data]="chartData5" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
-
+             
+             <app-ngx-test  *ngIf="oximinChartData" [data]="oximinChartData" [xAxisLabel]="xAxisLabelPump" [yAxisLabel]="yAxisLabelPump"> </app-ngx-test>
+  
           </md-card-content>
         </md-card>
     </div>
       </div>
 
-  <!-- <div class="container">
-  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
-    <div fxFlex>
-      <md-card style="min-height:500px">
-        <md-card-content>
 
-  
-
-          DR - Daily rate of direct recharge
-
-          <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
-
-          {{DR}}
-          <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
-        </md-card-content>
-      </md-card>
-    </div>
-
-
-    <div fxFlex>
-
-      <md-card style="min-height:500px">
-        <md-card-content>
-          DR - Daily rate of direct recharge
-
-          <md-slider [(ngModel)]="DR" [thumb-label]=true></md-slider>
-
-          {{DR}}
-
-          <app-ngx-test *ngIf="chartData" [data]="chartData" [xAxisLabel]="xAxisLabel" [yAxisLabel]='yAxisLabel'> </app-ngx-test>
-        </md-card-content>
-      </md-card>
-    </div>
-  </div>
-  </div> -->
 </section>

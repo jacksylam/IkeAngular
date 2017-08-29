@@ -9,7 +9,9 @@ import {MdAutocompleteModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AgmCoreModule } from '@agm/core';
 import { HttpModule } from '@angular/http';
-
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,9 +23,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import 'hammerjs';
 import { ThreeJsComponent } from './three-js/three-js.component';
 import { GooglemapComponent } from './googlemap/googlemap.component';
+import {PumpDataService} from './pump-data.service';
 
 import * as $ from 'jquery';
 import { NgxOximinComponent } from './ngx-oximin/ngx-oximin.component';
+
+import {environment} from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -49,10 +54,14 @@ import { NgxOximinComponent } from './ngx-oximin/ngx-oximin.component';
    AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo'
     }),
-    HttpModule
+    HttpModule,
+        AngularFireModule.initializeApp(environment.firebase),
+            AngularFireDatabaseModule,
+AngularFireAuthModule
+
 
   ],
-  providers: [],
+  providers: [PumpDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

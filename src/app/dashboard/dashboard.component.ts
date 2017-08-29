@@ -9,6 +9,8 @@ import { Observable } from "rxjs/Observable";
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
 
+import {PumpDataService} from '../pump-data.service';
+import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database';
 
 
 
@@ -37,6 +39,10 @@ export class DashboardComponent implements OnInit, OnChanges {
   private xAxisLabel: string;
   private yAxisLabel: string;
 
+
+  private xAxisLabelPump: string = "Day";
+  private yAxisLabelPump: string = "Gallon";
+
   private FakeMonths: Array<any>;
 
   @Input() private DR2: number = 2;
@@ -54,9 +60,16 @@ export class DashboardComponent implements OnInit, OnChanges {
   private chartData5: Array<any>;
 
   private oximinJsonData: Array<any>;
-  private oximinChartData: Array<any>;
+  public  oximinChartData: Array<any>;
 
-  constructor(private http: Http) {
+  items: FirebaseListObservable<any[]>;
+
+
+
+
+  constructor(private http: Http, 
+     private pumpDataService: PumpDataService,
+    private db: AngularFireDatabase)  {
     this.DayValues = [];
     this.Xi = 10;
     this.Ei = 10;
@@ -79,9 +92,9 @@ export class DashboardComponent implements OnInit, OnChanges {
 
     this.generateFakeMonths();
 
-
+    this.pumpDataService.getPumpData();
     
-
+  
   }
 
   ngOnInit() {
@@ -104,8 +117,12 @@ export class DashboardComponent implements OnInit, OnChanges {
     
   // this.getJSON().subscribe(data => this.oximinJsonData = data, error => console.log(error));
   // this.generateOximinChartData();
-  this.getJSON().subscribe( data => this.generateOximinChartData(data), error => console.log(error));
+  // this.getJSON().subscribe( data => this.generateOximinChartData(data), error => console.log(error));
   // this.generateOximinChartData();
+
+
+    this.generateOximinChartData();
+    // this.generateOximinChartData(this.items);
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -399,47 +416,184 @@ export class DashboardComponent implements OnInit, OnChanges {
 
   }
 
+  generateOximinChartData(){
+    this.oximinChartData = new Array<any>();
+    var firstLine = {
+      name: "Halawa Shaft",
+      series: []
+    }
+    var secondLine = {
+      name: "Kalauao Wells",
+      series: []
+    }
+    var thirdLine = { 
+      name: "Kunia III",
+      series: []
+    }
+    var fourthLine = {
+      name: "Pearl City III",
+      series: []
+    }
+    this.oximinChartData.push(firstLine);
+    this.oximinChartData.push(secondLine);
+    this.oximinChartData.push(thirdLine);
+    this.oximinChartData.push(fourthLine);
 
-  generateOximinChartData(data){
-    this.oximinJsonData = data;
-    this.oximinChartData = [];
-
-      var halawaShaft = {
+    this.items = this.db.list('/', {preserveSnapshot: true});
+    this.items.subscribe(snapshots=>{
+      this.oximinChartData = new Array<any>();
+      var firstLine = {
         name: "Halawa Shaft",
         series: []
       }
-
-
-      var kalauaoWells = {
-        name:"Kalauao Wells",
+      var secondLine = {
+        name: "Kalauao Wells",
         series: []
       }
-      
-      var pearlCity = {
+      var thirdLine = { 
+        name: "Kunia III",
+        series: []
+      }
+      var fourthLine = {
         name: "Pearl City III",
         series: []
       }
+      this.oximinChartData.push(firstLine);
+      this.oximinChartData.push(secondLine);
+      this.oximinChartData.push(thirdLine);
+      this.oximinChartData.push(fourthLine);
+      snapshots.forEach(snapshot => {
+        // console.log(snapshot.key, snapshot.val()['Halawa Shaft']);
+        if(isNaN(snapshot.val()['Halawa Shaft']) || !snapshot.val()['Halawa Shaft']){
+          // firstLine.series.push({name: snapshot.key, value: "0"});
+          this.oximinChartData[0].series.push({name: snapshot.key, value: "19"})
+        }
+        else{
+          // firstLine.series.push({name: snapshot.key, value: snapshot.val()['Halawa Shaft']});        
+          this.oximinChartData[0].series.push({name: snapshot.key, value: snapshot.val()['Halawa Shaft']})          
+        }
+        if(isNaN(snapshot.val()['Kalauao Wells']) || !snapshot.val()['Kalauao Wells']){
+          // secondLine.series.push({name: snapshot.key, value: "0"});
+          this.oximinChartData[1].series.push({name: snapshot.key, value: "19"})
+        }
+        else{
+          // secondLine.series.push({name: snapshot.key, value: snapshot.val()['Kalauao Wells']});    
+          this.oximinChartData[1].series.push({name: snapshot.key, value: snapshot.val()['Kalauao Wells']})          
+        }
+        if(isNaN(snapshot.val()['Kunia III'])|| !snapshot.val()['Kunia III']){
+          // thirdLine.series.push({name: snapshot.key, value: "0"});
+          this.oximinChartData[2].series.push({name: snapshot.key, value: "19"})          
+        }
+        else{
+          // thirdLine.series.push({name: snapshot.key, value: snapshot.val()['Kunia III']});  
+          this.oximinChartData[2].series.push({name: snapshot.key, value: snapshot.val()['Kunia III']})                    
+        }
+        if(isNaN(snapshot.val()['Pearl City III']) || !snapshot.val()['Pearl City III']){
+          // fourthLine.series.push({name: snapshot.key, value: "0"}); 
+          this.oximinChartData[3].series.push({name: snapshot.key, value: "19"})                    
+        }
+        else{
+          // fourthLine.series.push({name: snapshot.key, value: snapshot.val()['Pearl City III']});   
+          this.oximinChartData[3].series.push({name: snapshot.key, value: snapshot.val()['Pearl City III']})                              
+        }
+      });
+ 
+ 
+      console.log(JSON.stringify(this.oximinChartData));
+    })
 
-      var kunia = {
-        name: "Kunia",
-        series:[]
-      }
+    // this.oximinChartData = [{
+    //   "name": "Germany",
+    //   "series": [
+    //     {
+    //       "name": "2010",
+    //       "value": 7300000
+    //     },
+    //     {
+    //       "name": "2011",
+    //       "value": 8940000
+    //     }
+    //   ]
+    // },
+  
+    // {
+    //   "name": "USA",
+    //   "series": [
+    //     {
+    //       "name": "2010",
+    //       "value": 7870000
+    //     },
+    //     {
+    //       "name": "2011",
+    //       "value": 8270000
+    //     }
+    //   ]
+    // },
+  
+    // {
+    //   "name": "France",
+    //   "series": [
+    //     {
+    //       "name": "2010",
+    //       "value": 5000002
+    //     },
+    //     {
+    //       "name": "2011",
+    //       "value": 5800000
+    //     }
+    //   ]
+    // }]
 
-      for(let i = 0; i < this.oximinJsonData.length; i++){
-        halawaShaft.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Halawa Shaft']});
-        kalauaoWells.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Kalauao Wells']});
-        pearlCity.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Pearl City III']});
-        kunia.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Kunia III']});
-      }
-
-      this.oximinChartData.push(halawaShaft);
-      this.oximinChartData.push(kalauaoWells);
-      this.oximinChartData.push(pearlCity);
-      this.oximinChartData.push(kunia);
-
-      console.log(this.oximinChartData);
-
+  console.log(this.oximinChartData);
+    
+    
   }
+
+
+  // generateOximinChartData(data){
+  //   this.oximinJsonData = data;
+  //   this.oximinChartData = [];
+    
+
+
+
+    
+  //     var halawaShaft = {
+  //       name: "Halawa Shaft",
+  //       series: []
+  //     }
+
+
+  //     var kalauaoWells = {
+  //       name:"Kalauao Wells",
+  //       series: []
+  //     }
+      
+  //     var pearlCity = {
+  //       name: "Pearl City III",
+  //       series: []
+  //     }
+
+  //     var kunia = {
+  //       name: "Kunia",
+  //       series:[]
+  //     }
+
+  //     for(let i = 0; i < this.oximinJsonData.length; i++){
+  //       halawaShaft.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Halawa Shaft']});
+  //       kalauaoWells.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Kalauao Wells']});
+  //       pearlCity.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Pearl City III']});
+  //       kunia.series.push({name: (i+1).toString(), value: this.oximinJsonData[i]['Kunia III']});
+  //     }
+
+  //     this.oximinChartData.push(halawaShaft);
+  //     this.oximinChartData.push(kalauaoWells);
+  //     this.oximinChartData.push(pearlCity);
+  //     this.oximinChartData.push(kunia);
+
+  //     console.log(this.oximinChartData);
+
+  // }
 
  public getJSON(): Observable<any> {
     return this.http.get("../../assets/Oximin.json")
